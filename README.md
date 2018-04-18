@@ -23,7 +23,6 @@
 <!--
 Description here.
 -->
-#  使用文档稍后补上
 ## Install
 
 ```bash
@@ -61,6 +60,18 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Example
 
 <!-- example here -->
+```
+const order = {
+        body: '微信支付',
+        out_trade_no: ulid(),// 订单号 唯一id
+        total_fee: Math.floor(total * 100), // 微信最小单位是分
+        spbill_create_ip: ip,               // 请求的ip地址
+        openid,
+        trade_type: 'JSAPI',
+      };
+const payargs = await this.app.wxpay.getBrandWCPayRequestParams(order);
+return payargs;
+```
 
 ## Questions & Suggestions
 
