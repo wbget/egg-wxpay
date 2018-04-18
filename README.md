@@ -81,7 +81,7 @@ async pay(){
 module.exports = app => {
   const { router, controller } = app;
   ...
-  router.post('/notify', app.wxpay.notify(app.config.wx), controller.wx.notify);
+  router.post('/notify', app.wxpay.notify, controller.wx.notify);
   ...
 }
 //app/controller/wx.js
