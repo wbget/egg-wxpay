@@ -1,6 +1,6 @@
 {
   "name": "egg-wxpay",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "wechat pay for eggjs",
   "eggPlugin": {
     "name": "wxpay"
