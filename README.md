@@ -49,10 +49,13 @@ exports.wxpay = {
     partnerKey: '<partnerkey>',
     appId: '<appid>',
     mchId: '<mchid>',
-    notifyUrl: '<notifyurl>',
-    ca: '<location-of-your-apiclient-cert.pem>',
-    pfx: '<location-of-your-apiclient-cert.p12>',
+    notifyUrl: '<notifyurl>', //http://www.notify.com/notify
+    ca: '<location-of-your-apiclient-cert.pem>',  // fs.readFileSync(path.join(__dirname, '../config/rootca.pem'))
+    pfx: '<location-of-your-apiclient-cert.p12>', // fs.readFileSync(path.join(__dirname, '../config/apiclient_cert.p12')),
 };
+
+    
+    
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
@@ -61,7 +64,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 <!-- example here -->
 ```js
-//app/service/wx.js
+//app/controller/wx.js
 async pay(){
   // 支付
   const order = {
@@ -73,7 +76,7 @@ async pay(){
           trade_type: 'JSAPI',
         };
   const payargs = await this.app.wxpay.getBrandWCPayRequestParams(order);
-  return payargs;
+  this.ctx.body =  payargs;
 }
 
 // 回调
