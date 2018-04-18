@@ -60,7 +60,8 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Example
 
 <!-- example here -->
-```
+```JavaScript
+// 支付
 const order = {
         body: '微信支付',
         out_trade_no: ulid(),// 订单号 唯一id
@@ -71,6 +72,20 @@ const order = {
       };
 const payargs = await this.app.wxpay.getBrandWCPayRequestParams(order);
 return payargs;
+
+// 回调
+//app/router.js
+module.exports = app => {
+  const { router, controller } = app;
+  ...
+  router.post('/notify', app.wxpay.notify(app.config.wx), controller.wx.notify);
+  ...
+}
+//app/controller/wx.js
+async notify() {
+  const { out_trade_no } = this.ctx.request.body;// 订单号
+  ...
+}
 ```
 
 ## Questions & Suggestions
