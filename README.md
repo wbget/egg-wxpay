@@ -9,17 +9,18 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-wxpay.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-wxpay
-[travis-image]: https://img.shields.io/travis/eggjs/egg-wxpay.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-wxpay
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-wxpay.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-wxpay?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-wxpay.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-wxpay
+[travis-image]: https://img.shields.io/travis/wbget/egg-wxpay.svg?style=flat-square
+[travis-url]: https://travis-ci.org/wbget/egg-wxpay
+[codecov-image]: https://img.shields.io/codecov/c/github/wbget/egg-wxpay.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/wbget/egg-wxpay?branch=master
+[david-image]: https://img.shields.io/david/wbget/egg-wxpay.svg?style=flat-square
+[david-url]: https://david-dm.org/wbget/egg-wxpay
 [snyk-image]: https://snyk.io/test/npm/egg-wxpay/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-wxpay
 [download-image]: https://img.shields.io/npm/dm/egg-wxpay.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-wxpay
 
+[wechat-pay](https://github.com/supersheep/wechat-pay) for [eggjs](https://eggjs.org)
 <!--
 Description here.
 -->
@@ -96,7 +97,7 @@ async notify() {
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/wbget/egg/issues).
 
 ## License
 
