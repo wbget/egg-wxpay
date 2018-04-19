@@ -20,7 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-wxpay.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-wxpay
 
-[wechat-pay](https://github.com/supersheep/wechat-pay) for [eggjs](https://eggjs.org)
+[wechat-pay](https://github.com/supersheep/wechat-pay) for [eggjs](https://eggjs.org) plugin
 <!--
 Description here.
 -->
