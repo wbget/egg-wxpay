@@ -97,7 +97,7 @@ async notify() {
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/wbget/egg/issues).
+Please open an issue [here](https://github.com/wbget/egg-wxpay/issues).
 
 ## License
 
